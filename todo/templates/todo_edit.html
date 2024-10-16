@@ -1,0 +1,13 @@
+{%extends 'base.html'%}
+{%block main_block%}
+
+<div class="container">
+    <h1>Edit Todo</h1>
+    <form action="" method="post">
+    {%csrf_token%}
+    {{form.as_p}}
+    <button type="submit">Edit todo</button>
+</form>
+</div>
+
+{%endblock%}
